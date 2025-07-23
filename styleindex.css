@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #C2CAFD;
+  color: #303134;
+  transition: 0.2s linear;
+  width: 100%;
+}
+
+.padding{
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 24px;
+}
+
+#logo{
+  width: 150px;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#me{
+  margin-left: 20px;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+  border: solid 2px;
+  width: 10px;
+}
+
+.label {
+  background-color: aliceblue;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  position: relative;
+  height: 24px;
+  width: 50px;
+  transform: scale(1.2);
+
+}
+
+.label .ball {
+  background-color: #1f1f1f;
+  border-radius: 15%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 20px;
+  width: 20px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.ball:hover{
+  background-color: #9daaff;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(26px);
+}
+
+.fa-moon, .fa-sun {
+  color: #1f1f1f;
+}
+
+ul{
+  display: flex;
+  align-items: center;
+}
+
+a{
+  font-weight: bold;
+  color: #303134;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #0E3144;
+}
+
+li{
+  display: inline-block;
+  
+}
+
+#btn-login{
+  padding: 5px;
+  height: 40px;
+  margin-right: 20px;
+  color: aliceblue;
+}
+
+#btn-login:hover{
+    background: transparent;
+  opacity: 0.7;
+  transition:all 0.1s linear;
+}
+
+#btn-pergunta{
+  color: aliceblue;
+  border: 2px solid aliceblue;
+  border-radius: 10px;
+  padding: 5px 20px;
+  display: none;
+  font-size: 16px;
+  height: 40px;
+}
+  
+#btn-pergunta:hover{
+ background: transparent;
+  opacity: 0.7;
+  transition:all 0.1s linear;
+}
+  
+main{
+  width: 100%;
+  display: flex; 
+  margin-top: 2rem;
+  position: relative;
+}
+
+#esquerda{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+h2{
+  flex-direction: column;
+  width: 100%;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: aliceblue;
+}
+  
+span{
+  font-weight: bold;
+  color: #0E3144;
+}
+
+h6{
+  width: 100%;
+  margin-top: 20px;
+  font-size: 18px;
+  color: aliceblue;
+}
+
+form{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;  
+  
+}
+
+#searchtext{
+  width: 100%;
+  position: relative;
+}
+
+#search{
+  position: absolute;
+  left: 10px;
+  top: 27px;
+  transition: 0.2s linear;
+}
+
+ button{
+  color: aliceblue;
+  background-color: #9daaff;
+  border-radius: 100%;
+  border: none;
+  font-size: 20px;
+  outline: none;
+  width: 100%;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: 0.2s linear;
+}
+  
+form button:hover{
+  cursor: pointer;
+}
+  
+form input[type="text"]{
+  height: 56px;
+  width: 100%;
+  border-radius: 50px;
+  font-size: 18px;
+  padding-left: 60px;
+}
+
+input{
+  background-color: aliceblue;
+  margin-top: 20px;
+  padding: 24px;
+  font-size: 14px;
+  outline: none;
+}
+
+.img{
+  display: none;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 4rem; 
+  margin-top: 200px;
+  max-width:100%;
+}
+
+.panda{
+  width: 150%;
+  height: 150%;
+}
+
+@media only screen and (min-width: 1400px){
+  .padding{
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  #logo{
+    width: 250px;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+  header{
+      padding-top: 56px;
+  }
+  
+  h2{
+    width: 900px;
+    font-size: 68px;
+    line-height: 68px;
+    max-width: 752px
+  }
+  
+  h6{
+    width: 100%;
+  }
+
+  form input[type="text"]{
+    width: 100%;
+    height: 78px;
+  }
+
+  #search{
+    top: 39px;
+  }
+
+  #logo{
+    width: 250px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+
+  #btn-pergunta{
+    display: inherit;
+  }
+
+  #logomobile{
+    display: none;
+  }
+
+  #logo{
+    display: block;
+  }
+
+   .img{
+    display: block;
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+  }
+
+  #esquerda{
+    width: 50%;
+  }
+
+  form input[type="text"]{
+    width: 100%;
+  }
+}
+
+/*MODO ESCURO*/
+
+body.dark {
+  background: #1F1F1F;
+}
+
+.label.dark{
+  background-color: aliceblue;
+}
+
+.ball.dark, #btn-pergunta.dark:hover{
+  background-color: #1F1F1F;
+}
+
+.ball.dark:hover{
+  background-color: #9daaff;
+}
+
+#span.dark{
+  color: #9daaff;
+}
+
+#btn.dark{
+  background-color: #303134;
+}
+
+#btnp.dark, h6.dark, h2.dark{
+  color: aliceblue;
+}
+
+#btnp.dark{
+  background-color: #303134;
+}
+
+#btn-login.dark:hover{
+  color: #9daaff;
+}

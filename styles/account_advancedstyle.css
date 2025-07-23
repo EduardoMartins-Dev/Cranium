@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    background-color: #C2CAFD;
+}
+
+
+header{
+    display: none;
+    align-self: top;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C2CAFD;
+    border-bottom: solid 2px aliceblue;
+    transition: 0.2s linear;
+    height: 75.6px;
+  }
+  
+  ul{
+    display: flex;
+    align-items: center;
+    padding: 5px 15px 5px 15px;
+  }
+  
+  #imgu{
+    border: solid 2px;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  #btn-perfil{
+    display: flex;
+  }
+
+  #logo{
+    width: 150px;
+    padding-top: 15px;
+    padding-left: 15px;
+  }
+  
+  #logomobile{
+    width: 20%;
+    height: 20%;
+    display: none;
+  }
+
+  li{
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  a{
+    font-weight: bold;
+    color:aliceblue;
+    transition: all 0.3s ease;
+  }
+  
+  a:hover{
+    opacity: 0.7;
+  }
+  
+  #v{
+    color: #333;
+  }
+  
+  #btn-perguntar{
+    cursor: pointer;
+    display: none;
+  }
+ 
+#content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+main.container{
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+    padding: .5rem;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+#ccontent{
+    display: flex;
+}
+
+#esq{
+    width: 100%;
+}
+
+#titlec{
+    padding: 20px 24px 20px 24px;
+}
+
+#v{
+    color: #333;
+}
+.fa-arrow-left:hover{
+    cursor: pointer;
+}
+
+#items{
+    width: 120px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    border-right: solid 2px;
+    height: 500px;
+}
+
+.items{
+    width: 100%;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+    color: #333;
+}
+
+.items:hover{
+   background-color: #F2F2F2;
+}
+
+.items:active{
+    background-color: #E5E5E5;
+}
+
+#ca{
+    background-color: #E5E5E5
+}
+
+#ca:hover{
+    background-color: #F2F2F2;
+}
+
+#lo{
+    color: red;
+}
+
+#lo:hover{
+    background-color: aliceblue;
+    font-size: 14px;
+}
+
+#c{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0 20px;
+}
+
+#ctitle{
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    padding-bottom: 2rem;
+}
+
+#seujeito{
+    border-bottom: solid 2px;
+    padding-bottom: 3rem;
+}
+
+#nome, #usuario, #email, #senha, #genero, #escolaridade{
+    font-weight: 600;
+    margin: 0 0px;
+}
+
+#ccusuario{
+    padding-left: 20px;
+}
+
+#cusuario::before{
+    content: "@";
+    position: absolute;
+    margin-left: 5px;
+}
+
+#info{
+    padding-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    outline: none;
+    padding-left: 10px;
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+    border: solid 2px;
+}
+
+select{
+    display: flex;
+    width: 100%;
+    height: 27px;
+    border-radius: 5px;
+    border: solid 2px;
+}
+
+#ae{
+    display: flex;
+    width: 100%;
+}
+
+#sc{
+    margin: 15px 0px 0px 0px;
+    width: 100%;
+    cursor: pointer;
+}
+
+@media (min-width: 1400px){
+
+    main.container{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    #lo:hover{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1000px){
+
+    #content{
+        padding-right: 500px;
+        padding-left: 500px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    main.conteiner{
+        width: 100%;
+    }
+
+    #lo:hover{
+        font-size: 18px;
+    }
+    
+}
+
+@media (min-width: 800px){
+    #content{
+        padding-right: 100px;
+        padding-left: 100px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #items{
+        width: 250px;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        border-right: solid 2px;
+        height: 75%;
+    }
+
+    #lo:hover{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 600px) {
+    header{
+        display: flex;
+    }
+    
+    #v{
+        display: none;
+    }
+
+    #content{
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    main.container {
+        height: 80vh;
+        border-radius: 20px;
+    }
+
+    form{
+        border: solid 2px #C2CAFD;
+    }
+
+    #info{
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+
+    #items{
+        height: 400px;
+    }
+
+    #lo:hover{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cranium - O melhor jeito de aprender é ensinando</title>
+    <script src="../scripts/blackindex.js" defer></script>
+    <link rel="stylesheet" href="styleindex.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="/img/logo.ico">
+</head>
+<body>
+    <div class="padding">
+        <header>
+            <section id="title">
+                <a href="index.html" title="Cranium.com">
+
+                    <div class="logo">
+                        <img id=logo src="../img/txtlogo.png" alt="txtlogo">
+                    </div>
+                </a>
+            </section>
+
+            <ul>
+                <a href="../html/login.php" id="btn-login"><li>ENTRAR</li></a>
+                <a href="../html/questions.php" id="btn-pergunta"><li>FAÇA UMA PERGUNTA</li></a>
+
+                <div id="me">
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                      <i class="fas fa-moon"></i>
+                      <i class="fas fa-sun"></i>
+                      <div class="ball"></div>
+                    </label>
+                </div> 
+            </ul>
+
+        </header>
+    
+        <main>
+            
+            <div id="esquerda">
+                <h2>O melhor jeito de aprender é <span id="span">ensinando</span></h2>
+
+                <h6>
+                    O Cranium é uma comunidade de compartilhamento de conhecimento onde 
+                    milhões de estudantes e especialistas unem forças para resolver 
+                    as tarefas escolares mais difíceis.
+                </h6>
+                
+                <form id="form" action="../html/questions.php" method="get">
+                    <div id="searchtext">
+                        <input id="indexP" name="indexP" type="text" placeholder="Qual a sua dúvida?">
+                        <div id="search">
+                            <button id="btnp" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        
+            <div class="img">
+                <img class="panda" src="../img/Tinicial.png" alt="">
+            </div>
+
+        </main>
+</div>
+</body>
+</html>
